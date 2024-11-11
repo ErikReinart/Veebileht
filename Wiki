@@ -1,2 +1,4 @@
-# Veebileht
-Veebilehe töö
+#Veebilehe töö
+Tartu toidupoed vms üles loetleda ja Google mapsi kaardile panna ja see veebilehele integreerida.
+ühele vahelehele läheb mapsi kaart ja teisele suuremate kettide tutvustus.
+
