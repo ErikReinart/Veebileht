@@ -2,32 +2,25 @@
 <html lang="et">
 <head>
     <meta charset="UTF-8">
-    <style>
-        body {
-            background-color: honeydew;
-        }
-        h1 {
-            text-align: center;
-            font-size: 30px;
-        }
-        p {
-            text-align: center;
-            font-size: 20px;
-            color:black;
-            line-height: 1;
-            transition: color 0.6s;
-        }
-        p:hover {  
-            color: red;
-        }
-
-    </style>
-    <title>Veebileht</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tartu toidupoed</title>
+    <link rel="stylesheet" href="pealehe.css">
 </head>
 <body>
+    <header>
+        <h1>Tartu toidupoed</h1>
+        <p>Leia endale lähim toidupoed siit</p>
+    </header>
 
-<h1>Cool ass website</h1>
-<p>On loodud html-failid: pealehe jaoks ning vähemalt veel kahe vahelehe jaoks. Igas html-failis on pealkiri ja vähemalt üks objekt veel: pilt, tekstilõik, tabel vms.</p>
+    <main>
+        <div id="map"></div>
+    </main>
 
+    <footer>
+        <p>&copy; sweg</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCGd6z4XP-p3-ivg-s-_kvI3vyczW2l-RE&callback=initMap" async defer></script>
 </body>
 </html>
