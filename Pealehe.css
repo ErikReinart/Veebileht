@@ -5,22 +5,67 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f8f9fa;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    font-size: 24px;
+    color: white;
+    background-color: gray;
 }
 
 header {
-    background-color: #007bff;
+    background-color: #333;
     color: white;
     text-align: center;
-    padding: 1rem 0;
+    padding: 10px;
 }
 
 footer {
-    text-align: center;
-    padding: 1rem 0;
-    background-color: #007bff;
+    background-color: #333;
     color: white;
+    text-align: center;
+    padding: 10px;
+}
+.dropdown{
+    display: inline-block;
+    position: absolute;
+    left: 30px;
+    margin-top: 40px;
+}
+
+.dropdown button{
+    background-color: hsl(0, 0%, 85%);
+    color: rgb(0, 0, 0);
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown a{
+    display: block;
+    color: black;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-size: 15px;
+}
+
+.dropdown .content2{
+    background-color: hsl(236, 9%, 63%);
+    position: absolute;
+    min-width: 100px;
+    box-shadow: 2px 2px 5px black;
+    display: none;
+}
+
+.dropdown:hover .content2{
+    display: block
+}
+
+.dropdown:hover button{
+    background-color: rgb(79, 79, 79);
+}
+
+.dropdown a:hover{
+    background-color: rgb(159, 159, 160) ;
 }
