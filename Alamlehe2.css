@@ -34,6 +34,13 @@ img {
     width: 100px;
     height: auto;
 }
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
 
 .dropdown{
     display: inline-block;
@@ -73,7 +80,6 @@ img {
 .dropdown:hover button{
     background-color: rgb(79, 79, 79);
 }
-
 .dropdown a:hover{
     background-color: rgb(159, 159, 160) ;
 }
