@@ -18,16 +18,29 @@
         </div>
 
         <h1>Tartu toidupoed</h1>
-        <p>Leia endale lähim toidupoed siit</p>
     </header>
 
     <main>
+        <img src="https://maps.google.com/mapfiles/ms/icons/ltblue-dot.png" alt="Coop"> <p1>-Coop</p1>   
+        <img src="https://maps.google.com/mapfiles/ms/icons/red-dot.png" alt="Rimi"> <p1>-Rimi</p1>
+        <img src="https://maps.google.com/mapfiles/ms/icons/yellow-dot.png" alt="Selver"> <p1>-Selver</p1>
+        <img src="https://maps.google.com/mapfiles/ms/icons/blue-dot.png" alt="Maxima"> <p1>-Maxima</p1>
+        <img src="https://maps.google.com/mapfiles/ms/icons/green-dot.png" alt="Muu"> <p1>-Muu</p1>
+
+        <div id="controls">
+            <label for="katekooriaFilter">Filtreeri kategooria järgi:</label>
+            <select id="katekooriaFilter" onchange="filterMarkers()">
+                <option value="all">All</option>
+                <option value="Coop">Coop</option>
+                <option value="Rimi">Rimi</option>
+                <option value="Selver">Selver</option>
+                <option value="Maxima">Maxima</option>
+                <option value="Muu">Muu</option>
+            </select>
+        </div>
+  
         <div id="map"></div>
     </main>
-
-    <footer>
-        <p>&copy; sweg</p>
-    </footer>
 
     <script src="scripts.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCGd6z4XP-p3-ivg-s-_kvI3vyczW2l-RE&callback=initMap" async defer></script>

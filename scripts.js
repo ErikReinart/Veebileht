@@ -400,11 +400,23 @@ function initMap() {
 
         // Näita poe infot, kui vajutatakse tema markerile
         const poeInfo = new google.maps.InfoWindow({
-            content: `<h2>${pood.name}</h2><p>${pood.address}</p>`,
+            content: `<h2>${pood.name}</h2><p2>${pood.address}</p2>`,
         });
 
         marker.addListener("click", () => {
             poeInfo.open(map, marker);
         });
+    });
+}
+
+function filterMarkers() {
+    const valitudPoekett = document.getElementById("katekooriaFilter").value;
+
+    markers.forEach(({ marker, pood }) => {
+        if (valitudPoekett === "all" || pood.category === valitudPoekett) {
+            marker.setVisible(true);
+        } else {
+            marker.setVisible(false);
+        }
     });
 }

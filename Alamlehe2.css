@@ -1,23 +1,79 @@
 body {
-    background-color: honeydew;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    font-size: 24px;
+    color: white;
+    background-color: gray;
 }
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
 h1 {
     text-align: center;
     font-size: 30px;
 }
+
 p {
     text-align: center;
     font-size: 20px;
-    color:black;
+    color:white;
     line-height: 1;
     transition: color 0.6s;
 }
-p:hover {  
-    color: red;
-}
+
 img {
     display: block;
     margin: 0 auto;
     width: 100px;
     height: auto;
+}
+
+.dropdown{
+    display: inline-block;
+    position: absolute;
+    left: 30px;
+    margin-top: 40px;
+}
+
+.dropdown button{
+    background-color: hsl(0, 0%, 85%);
+    color: rgb(0, 0, 0);
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown a{
+    display: block;
+    color: black;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-size: 15px;
+}
+
+.dropdown .content2{
+    background-color: hsl(236, 9%, 63%);
+    position: absolute;
+    min-width: 100px;
+    box-shadow: 2px 2px 5px black;
+    display: none;
+}
+
+.dropdown:hover .content2{
+    display: block
+}
+
+.dropdown:hover button{
+    background-color: rgb(79, 79, 79);
+}
+
+.dropdown a:hover{
+    background-color: rgb(159, 159, 160) ;
 }
